@@ -36,6 +36,7 @@
         <div class="square"></div>
     </div>
     <button id='done'>DONE</button>
+    <h3 id="cube"></h3>
 <script>
 var sqr = document.getElementsByClassName("square");
 colors = ['white', 'red', 'green', 'yellow', 'blue', 'orange']
@@ -57,12 +58,13 @@ document.getElementById("done").addEventListener('click', function(){
         if(sqr[i].style.backgroundColor['0'])
             str += sqr[i].style.backgroundColor['0'];
         else{
-            console.log("please select color for all boxes....");
+            alert("please select color for all boxes....");
             str = '';
-            break;
+            return;
         }
     }
     console.log(str);
+    document.getElementById("cube").innerText = "cube: "+str;
 });
 </script>
 </body>
