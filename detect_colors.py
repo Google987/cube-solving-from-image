@@ -219,19 +219,19 @@ def run_cube_detection():
             cv2.putText(
                 frame,
                 instruction,
-                (20, 40),
+                (20, 50),
                 cv2.FONT_HERSHEY_SIMPLEX,
-                0.9,
-                (0, 255, 255),
+                2,
+                (0, 100, 255),
                 2
             )
 
             cv2.putText(
                 frame,
                 "Press SPACE to capture",
-                (20, 75),
+                (20, 85),
                 cv2.FONT_HERSHEY_SIMPLEX,
-                0.7,
+                1,
                 (255, 255, 255),
                 2
             )
