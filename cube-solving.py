@@ -1,5 +1,7 @@
 import kociemba
 
+from detect_colors import run_cube_detection
+
 
 def colors_to_faces(cube):
     """Convert a 54-character color string to Kociemba notation."""
@@ -26,8 +28,10 @@ def colors_to_faces(cube):
 
 
 if __name__ == "__main__":
+    colors = run_cube_detection()
+
     # order: URFDLB
-    colors = "wyrgyorbg wbygoyorg ywrogowgy owgbwwbrw bygrrwyyb brrobbogo"
+    # colors = "wgowyywor ygbgoboyw bggwgwyry rbgrwowyg obrorroybyrbobwrbg"
 
     cube = colors_to_faces(colors)
 
