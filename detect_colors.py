@@ -67,7 +67,7 @@ def classify_color(bgr):
 # Detect the 9 stickers
 # ---------------------------------------------------------
 
-def detect_face(frame, x, y, size):
+def detect_face(frame, x, y, size, face_color):
     """
     Divide a square region into 3x3 cells and
     sample the center of each cell.
@@ -101,7 +101,10 @@ def detect_face(frame, x, y, size):
 
             avg_bgr = np.median(patch.reshape(-1, 3), axis=0).astype(np.uint8)
 
-            color = classify_color(avg_bgr)
+            if row == 1 and col == 1:
+                color = face_color
+            else: 
+                color = classify_color(avg_bgr)
 
             row_colors.append(color)
 
@@ -153,12 +156,12 @@ def run_cube_detection():
     # ---------------------------------------------------------
 
     faces = [
-        ("Upper", "yellow", "U"),
-        ("Right", "orange", "R"),
-        ("Front", "green", "F"),
-        ("Down", "white", "D"),
-        ("Left", "red", "L"),
-        ("Back", "blue", "B"),
+        ("Upper", "yellow", "U", "y"),
+        ("Right", "orange", "R", "o"),
+        ("Front", "green", "F", "g"),
+        ("Down", "white", "D", "w"),
+        ("Left", "red", "L", "r"),
+        ("Back", "blue", "B", "b"),
     ]
 
     captured_faces = []
@@ -192,7 +195,7 @@ def run_cube_detection():
         # Detect current face
         # -----------------------------------------------------
 
-        colors = detect_face(frame, x, y, SIZE)
+        colors = detect_face(frame, x, y, SIZE, faces[current_face][3])
 
         # -----------------------------------------------------
         # Outer detection box
@@ -212,7 +215,7 @@ def run_cube_detection():
 
         if current_face < len(faces):
 
-            face_name, face_color, face_letter = faces[current_face]
+            face_name, face_color, face_letter, face_color_short = faces[current_face]
 
             instruction = f"Show {face_name} ({face_color})"
 
@@ -259,7 +262,7 @@ def run_cube_detection():
 
             if current_face < len(faces):
 
-                face_name, face_color, face_letter = faces[current_face]
+                face_name, face_color, face_letter, face_color_short = faces[current_face]
 
                 # Flatten 3x3 matrix
                 face_string = "".join(
@@ -282,7 +285,7 @@ def run_cube_detection():
 
                 if current_face < len(faces):
 
-                    next_name, next_color, next_letter = faces[current_face]
+                    next_name, next_color, next_letter, next_color_short = faces[current_face]
 
                     print()
                     print(f"Show {next_name} ({next_color}) layer")
@@ -313,7 +316,7 @@ def run_cube_detection():
                     print("Face strings:")
 
                     for i, face in enumerate(faces):
-                        name, color, letter = face
+                        name, color, letter, color_short = face
                         print(f"{letter}: {captured_faces[i]}")
 
                     print()
