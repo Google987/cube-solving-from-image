@@ -27,6 +27,12 @@ def colors_to_faces(cube):
         raise ValueError(f"Invalid color character: {e.args[0]}")
 
 
+def solve_the_cube(solution):
+    from motor_control import close, solve_physical_cube
+    solve_physical_cube(solution)
+    close()
+
+
 if __name__ == "__main__":
     colors = run_cube_detection()
 
@@ -36,4 +42,8 @@ if __name__ == "__main__":
     cube = colors_to_faces(colors)
 
     print("Kociemba string:", cube)
-    print("Solution:", kociemba.solve(cube))
+    solution = kociemba.solve(cube)
+    print("Solution: ", solution)
+    input("Place the cube properly and press Enter...")
+    solve_the_cube(solution)
+    print("SOLVED")
