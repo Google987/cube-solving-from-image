@@ -1,0 +1,1478 @@
+{
+  "id": "0ade6bad-b8ed-44ea-b1f6-331ff01863e1",
+  "name": "cube solver circuit",
+  "board": {
+    "cols": 17,
+    "rows": 37,
+    "pitch": 2.54,
+    "margin": 2.14,
+    "labels": {
+      "letters": "cols",
+      "colsFrom": "left",
+      "rowsFrom": "top"
+    }
+  },
+  "kinds": {
+    "Memory_EPROM/27C020": {
+      "id": "Memory_EPROM/27C020",
+      "label": "27C020",
+      "descr": "OTP EPROM 2 MiBit (256 Ki x 8 Bit)",
+      "pins": [
+        {
+          "name": "VPP",
+          "col": 0,
+          "row": 0
+        },
+        {
+          "name": "A16",
+          "col": 0,
+          "row": 1
+        },
+        {
+          "name": "A15",
+          "col": 0,
+          "row": 2
+        },
+        {
+          "name": "A12",
+          "col": 0,
+          "row": 3
+        },
+        {
+          "name": "A7",
+          "col": 0,
+          "row": 4
+        },
+        {
+          "name": "A6",
+          "col": 0,
+          "row": 5
+        },
+        {
+          "name": "A5",
+          "col": 0,
+          "row": 6
+        },
+        {
+          "name": "A4",
+          "col": 0,
+          "row": 7
+        },
+        {
+          "name": "A3",
+          "col": 0,
+          "row": 8
+        },
+        {
+          "name": "A2",
+          "col": 0,
+          "row": 9
+        },
+        {
+          "name": "A1",
+          "col": 0,
+          "row": 10
+        },
+        {
+          "name": "A0",
+          "col": 0,
+          "row": 11
+        },
+        {
+          "name": "D0",
+          "col": 0,
+          "row": 12
+        },
+        {
+          "name": "D1",
+          "col": 0,
+          "row": 13
+        },
+        {
+          "name": "D2",
+          "col": 0,
+          "row": 14
+        },
+        {
+          "name": "GND",
+          "role": "power",
+          "col": 0,
+          "row": 15
+        },
+        {
+          "name": "D3",
+          "col": 6,
+          "row": 15
+        },
+        {
+          "name": "D4",
+          "col": 6,
+          "row": 14
+        },
+        {
+          "name": "D5",
+          "col": 6,
+          "row": 13
+        },
+        {
+          "name": "D6",
+          "col": 6,
+          "row": 12
+        },
+        {
+          "name": "D7",
+          "col": 6,
+          "row": 11
+        },
+        {
+          "name": "~{CE}",
+          "col": 6,
+          "row": 10
+        },
+        {
+          "name": "A10",
+          "col": 6,
+          "row": 9
+        },
+        {
+          "name": "~{OE}",
+          "col": 6,
+          "row": 8
+        },
+        {
+          "name": "A11",
+          "col": 6,
+          "row": 7
+        },
+        {
+          "name": "A9",
+          "col": 6,
+          "row": 6
+        },
+        {
+          "name": "A8",
+          "col": 6,
+          "row": 5
+        },
+        {
+          "name": "A13",
+          "col": 6,
+          "row": 4
+        },
+        {
+          "name": "A14",
+          "col": 6,
+          "row": 3
+        },
+        {
+          "name": "A17",
+          "col": 6,
+          "row": 2
+        },
+        {
+          "name": "~{PGM}",
+          "col": 6,
+          "row": 1
+        },
+        {
+          "name": "VCC",
+          "role": "power",
+          "col": 6,
+          "row": 0
+        }
+      ],
+      "height": 4.5,
+      "source": "kicad",
+      "package": "DIP-W15.24",
+      "datasheet": "http://ww1.microchip.com/downloads/en/devicedoc/doc0570.pdf"
+    },
+    "esp32": {
+      "id": "esp32",
+      "label": "esp32",
+      "source": "perfboarder",
+      "pins": [
+        {
+          "name": "1",
+          "col": 0,
+          "row": 2
+        },
+        {
+          "name": "2",
+          "col": 0,
+          "row": 1
+        },
+        {
+          "name": "3",
+          "col": 0,
+          "row": 0
+        },
+        {
+          "name": "d35",
+          "col": 0,
+          "row": 4
+        },
+        {
+          "name": "d33",
+          "col": 0,
+          "row": 6
+        },
+        {
+          "name": "d14",
+          "col": 0,
+          "row": 10
+        },
+        {
+          "name": "d34",
+          "col": 0,
+          "row": 3
+        },
+        {
+          "name": "d32",
+          "col": 0,
+          "row": 5
+        },
+        {
+          "name": "d25",
+          "col": 0,
+          "row": 7
+        },
+        {
+          "name": "d26",
+          "col": 0,
+          "row": 8
+        },
+        {
+          "name": "d27",
+          "col": 0,
+          "row": 9
+        },
+        {
+          "name": "d12",
+          "col": 0,
+          "row": 11
+        },
+        {
+          "name": "d13",
+          "col": 0,
+          "row": 12
+        },
+        {
+          "name": "gnd",
+          "col": 0,
+          "row": 13
+        },
+        {
+          "name": "x",
+          "col": 0,
+          "row": 14
+        },
+        {
+          "name": "d23",
+          "col": 9,
+          "row": 0
+        },
+        {
+          "name": "d22",
+          "col": 9,
+          "row": 1
+        },
+        {
+          "name": "18",
+          "col": 9,
+          "row": 2
+        },
+        {
+          "name": "19",
+          "col": 9,
+          "row": 3
+        },
+        {
+          "name": "d21",
+          "col": 9,
+          "row": 4
+        },
+        {
+          "name": "d19",
+          "col": 9,
+          "row": 5
+        },
+        {
+          "name": "d18",
+          "col": 9,
+          "row": 6
+        },
+        {
+          "name": "d5",
+          "col": 9,
+          "row": 7
+        },
+        {
+          "name": "24",
+          "col": 9,
+          "row": 8
+        },
+        {
+          "name": "25",
+          "col": 9,
+          "row": 9
+        },
+        {
+          "name": "d4",
+          "col": 9,
+          "row": 10
+        },
+        {
+          "name": "d2",
+          "col": 9,
+          "row": 11
+        },
+        {
+          "name": "d15",
+          "col": 9,
+          "row": 12
+        },
+        {
+          "name": "gnd2",
+          "col": 9,
+          "row": 13
+        },
+        {
+          "name": "3.3v",
+          "col": 9,
+          "row": 14
+        }
+      ]
+    },
+    "drv8825": {
+      "id": "drv8825",
+      "label": "drv8825",
+      "source": "perfboarder",
+      "pins": [
+        {
+          "name": "en",
+          "col": 0,
+          "row": 0
+        },
+        {
+          "name": "2",
+          "col": 0,
+          "row": 1
+        },
+        {
+          "name": "3",
+          "col": 0,
+          "row": 2
+        },
+        {
+          "name": "4",
+          "col": 0,
+          "row": 3
+        },
+        {
+          "name": "rst",
+          "col": 0,
+          "row": 4
+        },
+        {
+          "name": "slp",
+          "col": 0,
+          "row": 5
+        },
+        {
+          "name": "stp",
+          "col": 0,
+          "row": 6
+        },
+        {
+          "name": "dir",
+          "col": 0,
+          "row": 7
+        },
+        {
+          "name": "vmot",
+          "col": 5,
+          "row": 0
+        },
+        {
+          "name": "gnd",
+          "col": 5,
+          "row": 1
+        },
+        {
+          "name": "11",
+          "col": 5,
+          "row": 2
+        },
+        {
+          "name": "12",
+          "col": 5,
+          "row": 3
+        },
+        {
+          "name": "13",
+          "col": 5,
+          "row": 4
+        },
+        {
+          "name": "14",
+          "col": 5,
+          "row": 5
+        },
+        {
+          "name": "15",
+          "col": 5,
+          "row": 6
+        },
+        {
+          "name": "gnd2",
+          "col": 5,
+          "row": 7
+        }
+      ]
+    },
+    "cap-ceramic": {
+      "id": "cap-ceramic",
+      "label": "Capacitor, ceramic disc",
+      "pins": [
+        {
+          "name": "a",
+          "col": 0,
+          "row": 0
+        },
+        {
+          "name": "b",
+          "col": 1,
+          "row": 0
+        }
+      ],
+      "source": "perfboarder"
+    },
+    "header-1x4": {
+      "id": "header-1x4",
+      "label": "4-pin header",
+      "pins": [
+        {
+          "name": "1",
+          "col": 0,
+          "row": 0
+        },
+        {
+          "name": "2",
+          "col": 1,
+          "row": 0
+        },
+        {
+          "name": "3",
+          "col": 2,
+          "row": 0
+        },
+        {
+          "name": "4",
+          "col": 3,
+          "row": 0
+        }
+      ],
+      "height": 8.54,
+      "tags": [
+        "connector"
+      ],
+      "source": "kicad"
+    },
+    "power": {
+      "id": "power",
+      "label": "power",
+      "source": "perfboarder",
+      "pins": [
+        {
+          "name": "+ve",
+          "col": 0,
+          "row": 0
+        },
+        {
+          "name": "-ve",
+          "col": 0,
+          "row": 3
+        }
+      ]
+    }
+  },
+  "parts": [
+    {
+      "ref": "U1",
+      "kind": "esp32",
+      "at": {
+        "col": 15,
+        "row": 1
+      },
+      "rotation": 90,
+      "value": "esp32",
+      "soldered": false
+    },
+    {
+      "ref": "U2",
+      "kind": "drv8825",
+      "at": {
+        "col": 2,
+        "row": 12
+      },
+      "rotation": 0,
+      "soldered": false
+    },
+    {
+      "ref": "U3",
+      "kind": "drv8825",
+      "at": {
+        "col": 11,
+        "row": 12
+      },
+      "rotation": 0,
+      "soldered": false
+    },
+    {
+      "ref": "U4",
+      "kind": "drv8825",
+      "at": {
+        "col": 2,
+        "row": 21
+      },
+      "rotation": 0,
+      "soldered": false
+    },
+    {
+      "ref": "U5",
+      "kind": "drv8825",
+      "at": {
+        "col": 11,
+        "row": 21
+      },
+      "rotation": 0,
+      "soldered": false
+    },
+    {
+      "ref": "U6",
+      "kind": "drv8825",
+      "at": {
+        "col": 2,
+        "row": 30
+      },
+      "rotation": 0,
+      "soldered": false
+    },
+    {
+      "ref": "U7",
+      "kind": "drv8825",
+      "at": {
+        "col": 11,
+        "row": 30
+      },
+      "rotation": 0,
+      "soldered": false
+    },
+    {
+      "ref": "U8",
+      "kind": "cap-ceramic",
+      "at": {
+        "col": 9,
+        "row": 12
+      },
+      "rotation": 90,
+      "soldered": false
+    },
+    {
+      "ref": "U9",
+      "kind": "cap-ceramic",
+      "at": {
+        "col": 17,
+        "row": 12
+      },
+      "rotation": 90,
+      "soldered": false
+    },
+    {
+      "ref": "U10",
+      "kind": "cap-ceramic",
+      "at": {
+        "col": 17,
+        "row": 21
+      },
+      "rotation": 90,
+      "soldered": false
+    },
+    {
+      "ref": "U11",
+      "kind": "cap-ceramic",
+      "at": {
+        "col": 9,
+        "row": 21
+      },
+      "rotation": 90,
+      "soldered": false
+    },
+    {
+      "ref": "U12",
+      "kind": "cap-ceramic",
+      "at": {
+        "col": 9,
+        "row": 30
+      },
+      "rotation": 90,
+      "soldered": false
+    },
+    {
+      "ref": "U13",
+      "kind": "cap-ceramic",
+      "at": {
+        "col": 17,
+        "row": 30
+      },
+      "rotation": 90,
+      "soldered": false
+    },
+    {
+      "ref": "J1",
+      "kind": "header-1x4",
+      "at": {
+        "col": 9,
+        "row": 14
+      },
+      "rotation": 90,
+      "value": "driver header",
+      "soldered": false
+    },
+    {
+      "ref": "J2",
+      "kind": "header-1x4",
+      "at": {
+        "col": 9,
+        "row": 23
+      },
+      "rotation": 90,
+      "value": "driver header",
+      "soldered": false
+    },
+    {
+      "ref": "J3",
+      "kind": "header-1x4",
+      "at": {
+        "col": 17,
+        "row": 23
+      },
+      "rotation": 90,
+      "value": "driver header",
+      "soldered": false
+    },
+    {
+      "ref": "J5",
+      "kind": "header-1x4",
+      "at": {
+        "col": 9,
+        "row": 32
+      },
+      "rotation": 90,
+      "value": "driver header",
+      "soldered": false
+    },
+    {
+      "ref": "J6",
+      "kind": "header-1x4",
+      "at": {
+        "col": 17,
+        "row": 32
+      },
+      "rotation": 90,
+      "value": "driver header",
+      "soldered": false
+    },
+    {
+      "ref": "J4",
+      "kind": "header-1x4",
+      "at": {
+        "col": 17,
+        "row": 14
+      },
+      "rotation": 90,
+      "value": "driver header",
+      "soldered": false
+    },
+    {
+      "ref": "U14",
+      "kind": "power",
+      "at": {
+        "col": 17,
+        "row": 2
+      },
+      "rotation": 0,
+      "soldered": false
+    }
+  ],
+  "nets": [
+    {
+      "name": "m1 dir",
+      "pins": [
+        "U1.d19",
+        "U7.dir"
+      ],
+      "colour": "#d35400",
+      "wires": [
+        [
+          "U1.d19",
+          "U7.dir"
+        ]
+      ]
+    },
+    {
+      "name": "m1 step",
+      "pins": [
+        "U1.d18",
+        "U7.stp"
+      ],
+      "colour": "#2c3e50",
+      "wires": [
+        [
+          "U1.d18",
+          "U7.stp"
+        ]
+      ]
+    },
+    {
+      "name": "m2 step",
+      "pins": [
+        "U1.d22",
+        "U3.stp"
+      ],
+      "colour": "#c0392b",
+      "wires": [
+        [
+          "U1.d22",
+          "U3.stp"
+        ]
+      ]
+    },
+    {
+      "name": "m2 dir",
+      "pins": [
+        "U1.d23",
+        "U3.dir"
+      ],
+      "colour": "#2980b9",
+      "wires": [
+        [
+          "U1.d23",
+          "U3.dir"
+        ]
+      ]
+    },
+    {
+      "name": "m3 step",
+      "pins": [
+        "U1.d13",
+        "U2.stp"
+      ],
+      "colour": "#27ae60",
+      "wires": [
+        [
+          "U1.d13",
+          "U2.stp"
+        ]
+      ]
+    },
+    {
+      "name": "m3 dir",
+      "pins": [
+        "U1.d14",
+        "U2.dir"
+      ],
+      "colour": "#8e44ad",
+      "wires": [
+        [
+          "U1.d14",
+          "U2.dir"
+        ]
+      ]
+    },
+    {
+      "name": "m4 dir",
+      "pins": [
+        "U1.d33",
+        "U5.dir"
+      ],
+      "colour": "#16a085",
+      "wires": [
+        [
+          "U1.d33",
+          "U5.dir"
+        ]
+      ]
+    },
+    {
+      "name": "m5 step",
+      "pins": [
+        "U1.d27",
+        "U4.stp"
+      ],
+      "colour": "#d35400",
+      "wires": [
+        [
+          "U1.d27",
+          "U4.stp"
+        ]
+      ]
+    },
+    {
+      "name": "m5 dir",
+      "pins": [
+        "U1.d26",
+        "U4.dir"
+      ],
+      "colour": "#2c3e50",
+      "wires": [
+        [
+          "U1.d26",
+          "U4.dir"
+        ]
+      ]
+    },
+    {
+      "name": "m6 step",
+      "pins": [
+        "U1.d25",
+        "U6.stp"
+      ],
+      "colour": "#c0392b",
+      "wires": [
+        [
+          "U1.d25",
+          "U6.stp"
+        ]
+      ]
+    },
+    {
+      "name": "m6 dir",
+      "pins": [
+        "U1.d21",
+        "U6.dir"
+      ],
+      "colour": "#2980b9",
+      "wires": [
+        [
+          "U1.d21",
+          "U6.dir"
+        ]
+      ]
+    },
+    {
+      "name": "N21",
+      "pins": [
+        "U4.11",
+        "J2.1"
+      ],
+      "colour": "#e67e22",
+      "wires": [
+        [
+          "U4.11",
+          "J2.1"
+        ]
+      ]
+    },
+    {
+      "name": "N22",
+      "pins": [
+        "U4.12",
+        "J2.2"
+      ],
+      "colour": "#16a085",
+      "wires": [
+        [
+          "U4.12",
+          "J2.2"
+        ]
+      ]
+    },
+    {
+      "name": "N23",
+      "pins": [
+        "U4.13",
+        "J2.3"
+      ],
+      "colour": "#d35400",
+      "wires": [
+        [
+          "U4.13",
+          "J2.3"
+        ]
+      ]
+    },
+    {
+      "name": "N24",
+      "pins": [
+        "U4.14",
+        "J2.4"
+      ],
+      "colour": "#2c3e50",
+      "wires": [
+        [
+          "U4.14",
+          "J2.4"
+        ]
+      ]
+    },
+    {
+      "name": "N27",
+      "pins": [
+        "U6.11",
+        "J5.1"
+      ],
+      "colour": "#27ae60",
+      "wires": [
+        [
+          "U6.11",
+          "J5.1"
+        ]
+      ]
+    },
+    {
+      "name": "N28",
+      "pins": [
+        "U6.12",
+        "J5.2"
+      ],
+      "colour": "#8e44ad",
+      "wires": [
+        [
+          "U6.12",
+          "J5.2"
+        ]
+      ]
+    },
+    {
+      "name": "N29",
+      "pins": [
+        "U6.13",
+        "J5.3"
+      ],
+      "colour": "#e67e22",
+      "wires": [
+        [
+          "U6.13",
+          "J5.3"
+        ]
+      ]
+    },
+    {
+      "name": "N30",
+      "pins": [
+        "U6.14",
+        "J5.4"
+      ],
+      "colour": "#16a085",
+      "wires": [
+        [
+          "U6.14",
+          "J5.4"
+        ]
+      ]
+    },
+    {
+      "name": "power +ve",
+      "pins": [
+        "U2.vmot",
+        "U8.a",
+        "U14.+ve",
+        "U3.vmot",
+        "U9.a",
+        "U4.vmot",
+        "U11.a",
+        "U5.vmot",
+        "U10.a",
+        "U6.vmot",
+        "U12.a",
+        "U7.vmot",
+        "U13.a"
+      ],
+      "colour": "#d35400",
+      "wires": [
+        [
+          "U2.vmot",
+          "U8.a"
+        ],
+        [
+          "U8.a",
+          "U3.vmot"
+        ],
+        [
+          "U3.vmot",
+          "U9.a"
+        ],
+        [
+          "U2.vmot",
+          "U4.vmot"
+        ],
+        [
+          "U4.vmot",
+          "U11.a"
+        ],
+        [
+          "U11.a",
+          "U5.vmot"
+        ],
+        [
+          "U5.vmot",
+          "U10.a"
+        ],
+        [
+          "U4.vmot",
+          "U6.vmot"
+        ],
+        [
+          "U6.vmot",
+          "U12.a"
+        ],
+        [
+          "U12.a",
+          "U7.vmot"
+        ],
+        [
+          "U7.vmot",
+          "U13.a"
+        ],
+        [
+          "U9.a",
+          "U14.+ve"
+        ]
+      ]
+    },
+    {
+      "name": "power ground",
+      "pins": [
+        "U2.gnd",
+        "U8.b",
+        "U14.-ve",
+        "U3.gnd",
+        "U9.b",
+        "U4.gnd",
+        "U11.b",
+        "U5.gnd",
+        "U10.b",
+        "U6.gnd",
+        "U12.b",
+        "U7.gnd",
+        "U13.b"
+      ],
+      "colour": "#2c3e50",
+      "wires": [
+        [
+          "U2.gnd",
+          "U8.b"
+        ],
+        [
+          "U8.b",
+          "U3.gnd"
+        ],
+        [
+          "U3.gnd",
+          "U9.b"
+        ],
+        [
+          "U9.b",
+          "U14.-ve"
+        ],
+        [
+          "U2.gnd",
+          "U4.gnd"
+        ],
+        [
+          "U4.gnd",
+          "U11.b"
+        ],
+        [
+          "U11.b",
+          "U5.gnd"
+        ],
+        [
+          "U5.gnd",
+          "U10.b"
+        ],
+        [
+          "U4.gnd",
+          "U6.gnd"
+        ],
+        [
+          "U6.gnd",
+          "U12.b"
+        ],
+        [
+          "U12.b",
+          "U7.gnd"
+        ],
+        [
+          "U7.gnd",
+          "U13.b"
+        ]
+      ]
+    },
+    {
+      "name": "N33",
+      "pins": [
+        "U2.11",
+        "J1.1"
+      ],
+      "colour": "#c0392b",
+      "wires": [
+        [
+          "U2.11",
+          "J1.1"
+        ]
+      ]
+    },
+    {
+      "name": "N34",
+      "pins": [
+        "U2.12",
+        "J1.2"
+      ],
+      "colour": "#2980b9",
+      "wires": [
+        [
+          "U2.12",
+          "J1.2"
+        ]
+      ]
+    },
+    {
+      "name": "N35",
+      "pins": [
+        "U2.13",
+        "J1.3"
+      ],
+      "colour": "#27ae60",
+      "wires": [
+        [
+          "U2.13",
+          "J1.3"
+        ]
+      ]
+    },
+    {
+      "name": "N36",
+      "pins": [
+        "U2.14",
+        "J1.4"
+      ],
+      "colour": "#8e44ad",
+      "wires": [
+        [
+          "U2.14",
+          "J1.4"
+        ]
+      ]
+    },
+    {
+      "name": "N39",
+      "pins": [
+        "U3.11",
+        "J4.1"
+      ],
+      "colour": "#d35400",
+      "wires": [
+        [
+          "U3.11",
+          "J4.1"
+        ]
+      ]
+    },
+    {
+      "name": "N40",
+      "pins": [
+        "U3.12",
+        "J4.2"
+      ],
+      "colour": "#2c3e50",
+      "wires": [
+        [
+          "U3.12",
+          "J4.2"
+        ]
+      ]
+    },
+    {
+      "name": "N41",
+      "pins": [
+        "U3.13",
+        "J4.3"
+      ],
+      "colour": "#c0392b",
+      "wires": [
+        [
+          "U3.13",
+          "J4.3"
+        ]
+      ]
+    },
+    {
+      "name": "N42",
+      "pins": [
+        "U3.14",
+        "J4.4"
+      ],
+      "colour": "#2980b9",
+      "wires": [
+        [
+          "U3.14",
+          "J4.4"
+        ]
+      ]
+    },
+    {
+      "name": "N45",
+      "pins": [
+        "U5.11",
+        "J3.1"
+      ],
+      "colour": "#e67e22",
+      "wires": [
+        [
+          "U5.11",
+          "J3.1"
+        ]
+      ]
+    },
+    {
+      "name": "N46",
+      "pins": [
+        "U5.12",
+        "J3.2"
+      ],
+      "colour": "#16a085",
+      "wires": [
+        [
+          "U5.12",
+          "J3.2"
+        ]
+      ]
+    },
+    {
+      "name": "N47",
+      "pins": [
+        "U5.13",
+        "J3.3"
+      ],
+      "colour": "#d35400",
+      "wires": [
+        [
+          "U5.13",
+          "J3.3"
+        ]
+      ]
+    },
+    {
+      "name": "N48",
+      "pins": [
+        "U5.14",
+        "J3.4"
+      ],
+      "colour": "#2c3e50",
+      "wires": [
+        [
+          "U5.14",
+          "J3.4"
+        ]
+      ]
+    },
+    {
+      "name": "N51",
+      "pins": [
+        "U7.11",
+        "J6.1"
+      ],
+      "colour": "#27ae60",
+      "wires": [
+        [
+          "U7.11",
+          "J6.1"
+        ]
+      ]
+    },
+    {
+      "name": "N52",
+      "pins": [
+        "U7.12",
+        "J6.2"
+      ],
+      "colour": "#8e44ad",
+      "wires": [
+        [
+          "U7.12",
+          "J6.2"
+        ]
+      ]
+    },
+    {
+      "name": "N53",
+      "pins": [
+        "U7.13",
+        "J6.3"
+      ],
+      "colour": "#e67e22",
+      "wires": [
+        [
+          "U7.13",
+          "J6.3"
+        ]
+      ]
+    },
+    {
+      "name": "N54",
+      "pins": [
+        "U7.14",
+        "J6.4"
+      ],
+      "colour": "#16a085",
+      "wires": [
+        [
+          "U7.14",
+          "J6.4"
+        ]
+      ]
+    },
+    {
+      "name": "esp ground",
+      "pins": [
+        "U1.gnd2",
+        "U2.gnd2",
+        "U3.gnd2",
+        "U5.gnd2",
+        "U6.gnd2",
+        "U7.gnd2",
+        "U4.gnd2"
+      ],
+      "colour": "#27ae60",
+      "wires": [
+        [
+          "U1.gnd2",
+          "U2.gnd2"
+        ],
+        [
+          "U2.gnd2",
+          "U3.gnd2"
+        ],
+        [
+          "U2.gnd2",
+          "U4.gnd2"
+        ],
+        [
+          "U3.gnd2",
+          "U5.gnd2"
+        ],
+        [
+          "U4.gnd2",
+          "U6.gnd2"
+        ],
+        [
+          "U5.gnd2",
+          "U7.gnd2"
+        ]
+      ]
+    },
+    {
+      "name": "esp 3.3v",
+      "pins": [
+        "U1.3.3v",
+        "U2.rst",
+        "U2.slp",
+        "U3.rst",
+        "U3.slp",
+        "U4.rst",
+        "U4.slp",
+        "U5.rst",
+        "U6.rst",
+        "U6.slp",
+        "U7.rst",
+        "U7.slp",
+        "U5.slp"
+      ],
+      "colour": "#c0392b",
+      "wires": [
+        [
+          "U1.3.3v",
+          "U2.rst"
+        ],
+        [
+          "U2.rst",
+          "U2.slp"
+        ],
+        [
+          "U2.slp",
+          "U4.rst"
+        ],
+        [
+          "U4.rst",
+          "U4.slp"
+        ],
+        [
+          "U4.slp",
+          "U6.rst"
+        ],
+        [
+          "U6.rst",
+          "U6.slp"
+        ],
+        [
+          "U2.rst",
+          "U3.rst"
+        ],
+        [
+          "U3.rst",
+          "U3.slp"
+        ],
+        [
+          "U3.slp",
+          "U5.rst"
+        ],
+        [
+          "U5.rst",
+          "U5.slp"
+        ],
+        [
+          "U5.slp",
+          "U7.rst"
+        ],
+        [
+          "U7.rst",
+          "U7.slp"
+        ]
+      ]
+    },
+    {
+      "name": "m4 step",
+      "pins": [
+        "U5.stp",
+        "U1.d32"
+      ],
+      "colour": "#8e44ad",
+      "wires": [
+        [
+          "U5.stp",
+          "U1.d32"
+        ]
+      ]
+    }
+  ],
+  "keepouts": [],
+  "notes": [],
+  "createdAt": "2026-10-19T08:02:08.656Z",
+  "solderedLinks": [
+    "U3.vmot|U9.a",
+    "U2.vmot|U8.a",
+    "U3.gnd|U9.b",
+    "U2.gnd|U8.b",
+    "U11.a|U4.vmot",
+    "U10.a|U5.vmot",
+    "U10.b|U5.gnd",
+    "U11.b|U4.gnd",
+    "U12.a|U6.vmot",
+    "U12.b|U6.gnd",
+    "U13.a|U7.vmot",
+    "U13.b|U7.gnd"
+  ],
+  "updatedAt": "2026-10-22T08:19:51.361Z"
+}
